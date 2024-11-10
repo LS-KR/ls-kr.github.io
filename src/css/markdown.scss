@@ -1,0 +1,71 @@
+@import "./latte";
+@import "./fonts.css";
+
+.markdown {
+  color: $text;
+  text-align: justify;
+  text-justify: auto;
+  padding: 0.5rem 2rem;
+
+
+  h1, h2 {
+    color: $flamingo;
+    font-size: 2rem;
+    border-bottom: 1px solid $flamingo;
+  }
+
+  p {
+    margin: 0.65em 0;
+    line-height: 1.6;
+  }
+
+  li {
+    font-size: 1em;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+
+    &:active {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  blockquote {
+    background-color: $overlay1;
+    border-left: 2px solid $lavender;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
+  code {
+    background-color: $overlay0;
+    color: $text;
+    font-family: 'JetBrains Mono', monospace;
+    display: inline-block;
+    padding: 0.5rem;
+  }
+}
+
+[data-theme="dark"] {
+  .markdown {
+    color: hsl(227deg, 68%, 88%);
+
+    h1, h2 {
+      color: hsl(0deg, 58%, 86%);
+    }
+
+    a {
+      color: hsl(222deg, 74%, 74%);
+      text-decoration: none;
+
+      &:active {
+        color: hsl(222deg, 74%, 74%);
+        text-decoration: none;
+      }
+    }
+  }
+}
