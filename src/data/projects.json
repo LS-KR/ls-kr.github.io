@@ -20,5 +20,42 @@
         "url": "https://github.com/LS-KR/openrouter-ai"
       }
     ]
+  },
+  {
+    "title": "TDP-FT",
+    "description": "No description, website, or topics provided.",
+    "url": "https://ovoneko.github.io/TDP-FT/",
+    "links": [
+      {
+        "icon": "iconoir:github-circle",
+        "url": "https://github.com/OvONeko/TDP-FT"
+      }
+    ]
+  },
+  {
+    "title": "Rosmontis2333.github.io",
+    "description": "Rosmontis 的主页...是我写的没错(",
+    "url": "http://rosmontis.rhodes-island.work/",
+    "links": [
+      {
+        "icon": "iconoir:github-circle",
+        "url": "https://github.com/Rosmontis2333/Rosmontis2333.github.io"
+      },
+      {
+        "icon": "mynaui:grid-solid",
+        "url": "https://rosmontis2333.github.io/"
+      }
+    ]
+  },
+  {
+    "title": "WeatherWeb",
+    "description": "白嫖中国天气网的数据x",
+    "url": "https://github.com/LS-KR/WeatherWeb",
+    "links": [
+      {
+        "icon": "iconoir:github-circle",
+        "url": "https://github.com/LS-KR/WeatherWeb"
+      }
+    ]
   }
 ]
