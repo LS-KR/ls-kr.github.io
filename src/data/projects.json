@@ -1,0 +1,24 @@
+[
+  {
+    "title": "MeowLanguage-Reborn",
+    "description": "谨此纪念 坊洛",
+    "url": "https://ls-kr.github.io/MeowLanguage-Reborn",
+    "links": [
+      {
+        "icon": "iconoir:github-circle",
+        "url": "https://github.com/LS-KR/MeowLanguage-Reborn"
+      }
+    ]
+  },
+  {
+    "title": "openrouter-ai",
+    "description": "A router for LLMs, based on OpenRouter",
+    "url": "https://ls-kr.github.io/openrouter-ai",
+    "links": [
+      {
+        "icon": "iconoir:github-circle",
+        "url": "https://github.com/LS-KR/openrouter-ai"
+      }
+    ]
+  }
+]
