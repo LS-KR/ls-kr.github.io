@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "mynaui:brand-twitter",
+    "url": "https://twitter.com/ElihusoQ",
+    "title": "Twitter: @ElihusoQ"
+  },
+  {
+    "icon": "mynaui:brand-github",
+    "url": "https://github.com/LS-KR",
+    "title": "GitHub: @LS-KR"
+  },
+  {
+    "icon": "ion:logo-mastodon",
+    "url": "https://el5.net/@elihuso",
+    "title": "Mastodon: @elihuso@el5.net"
+  },
+  {
+    "icon": "prime:telegram",
+    "url": "https://t.me/Elihuso",
+    "title": "Telegram: @Elihuso"
+  },
+  {
+    "icon": "lucide:mail",
+    "url": "mailto:Elihuso@outlook.com",
+    "title": "Email me"
+  }
+]
