@@ -1,0 +1,3 @@
+var l=Object.defineProperty;var _=(o,e,n)=>e in o?l(o,e,{enumerable:!0,configurable:!0,writable:!0,value:n}):o[e]=n;var a=(o,e,n)=>_(o,typeof e!="symbol"?e+"":e,n);import{V as m,C as f,_ as h,c as u,o as i}from"./index-Bp7y6C4B.js";const v=`<h2>喵呜喵呜喵呜喵</h2>
+<p>总之就是手搓的主页x</p>
+`;var d=Object.defineProperty,H=Object.getOwnPropertyDescriptor,$=(o,e,n,s)=>{for(var r=s>1?void 0:s?H(e,n):e,t=o.length-1,c;t>=0;t--)(c=o[t])&&(r=(s?c(e,n,r):c(r))||r);return s&&r&&d(e,n,r),r};let p=class extends m{constructor(){super(...arguments);a(this,"html",v)}};p=$([f({})],p);const x=["innerHTML"];function O(o,e,n,s,r,t){return i(),u("div",{class:"markdown",innerHTML:o.html},null,8,x)}const b=h(p,[["render",O]]);export{b as default};
