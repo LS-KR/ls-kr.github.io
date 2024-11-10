@@ -13,7 +13,7 @@ export default class Projects extends Vue {
 
 <template>
   <div class="container">
-    <ProjectCard v-for="card in projects" :project="card" :index="card.title"/>
+    <ProjectCard v-for="card in projects" :project="card" :index="card.title" :key="card.title"/>
   </div>
 </template>
 
