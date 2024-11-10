@@ -13,11 +13,11 @@ export default class About extends Vue {
 </script>
 
 <template>
-  <div class="markdown">
+  <!-- <div class="markdown">
     <h2>Contact with me?</h2>
   </div>
   <ContactList />
-  <hr />
+  <hr />-->
   <div class="markdown" v-html="html" />
 </template>
 

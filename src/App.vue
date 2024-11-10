@@ -3,12 +3,16 @@ import ThemeButton from '@/components/ThemeButton.vue'
 import { randint } from '@/logic/helper'
 import { Component, Vue } from 'vue-facing-decorator'
 import avatars from '@/data/avatar.json'
+import contacts from '@/data/contacts.json'
+import { Contact } from './logic/data'
+import { Icon } from '@iconify/vue'
 
 @Component({
-  components: { ThemeButton },
+  components: { ThemeButton, Icon },
 })
 export default class App extends Vue {
   avatar = ''
+  contacts = contacts as Contact[]
 
   created() {
     this.avatar = avatars[randint(0, avatars.length - 1)]
@@ -28,6 +32,15 @@ export default class App extends Vue {
       <router-link to="/articles">Articles</router-link>
     </div>
     <div class="nav-right">
+      <a
+        v-for="(contact, index) in contacts"
+        :key="index"
+        :href="contact.url"
+        :title="contact.url"
+        target="_blank"
+      >
+        <Icon :icon="contact.icon" class="nav-contact-icon" />
+      </a>
       <ThemeButton />
     </div>
   </div>
@@ -38,9 +51,12 @@ export default class App extends Vue {
 <style lang="scss">
 @import '@/css/latte.scss';
 @import '@/css/motion.scss';
+@import '@/css/fonts.css';
 
 * {
   transition: all 0.5s $ease-out-cric;
+  font-family: 'PingFang SC', 'LXGW Wenkai', 'Microsoft YaHei', '微软雅黑', Arial, Helvetica,
+    sans-serif;
 }
 
 body {
@@ -113,6 +129,19 @@ body {
     justify-content: center;
     padding: 0 1rem;
     gap: 1rem;
+
+    a {
+      &:hover {
+        filter: drop-shadow(0px 0px 3px #fff);
+      }
+
+      .nav-contact-icon {
+        width: 24px;
+        height: 24px;
+        color: #fff;
+        vertical-align: middle;
+      }
+    }
   }
 }
 
