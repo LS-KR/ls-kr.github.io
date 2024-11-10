@@ -48,6 +48,11 @@ export default class ProjectCard extends Vue {
   margin: auto 1rem;
   padding: 0 1rem;
 
+  &:hover {
+    filter: drop-shadow(0px 5px 15px $pink);
+    transform: translateY(-5px);
+  }
+
   .title {
     flex: 1;
     color: $text;
@@ -73,6 +78,7 @@ export default class ProjectCard extends Vue {
     .description {
       margin: 0;
       font-family: 'LXGW WenKai', 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: $text;
     }
 
     .links {
@@ -87,6 +93,31 @@ export default class ProjectCard extends Vue {
         height: 1.4rem;
         color: $lavender;
         vertical-align: middle;
+      }
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .project-card {
+    background-color: hsl(229deg, 19%, 23%);
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.15);
+
+    .title {
+      color: hsl(227deg, 70%, 87%);
+
+      &:active {
+        color: hsl(227deg, 70%, 87%);
+      }
+    }
+
+    .bottom {
+      .links.icon {
+        color: hsl(96deg, 44%, 68%);
+      }
+
+      .description {
+        color: hsl(227deg, 70%, 87%) !important;
       }
     }
   }

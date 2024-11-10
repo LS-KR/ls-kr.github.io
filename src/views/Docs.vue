@@ -1,11 +1,27 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts">
-import { Component, Vue } from 'vue-facing-decorator'
+import { dataHost } from '@/logic/config'
+import { Component, Prop, Vue } from 'vue-facing-decorator'
+import MDX from '@/components/MDX.vue'
 
-@Component({})
-export default class Docs extends Vue {}
+@Component({components: {MDX}})
+export default class Docs extends Vue {
+  @Prop({required: true}) name!: string
+
+  computedCode = ''
+
+  created() {
+    fetch(dataHost + this.name + '.json').then(it => it.text()).then(it => {
+      this.computedCode = it
+    })
+  }
+}
 </script>
 
-<template></template>
+<template>
+  <MDX :code="computedCode" class="markdown" />
+</template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import '@/css/markdown';
+</style>
