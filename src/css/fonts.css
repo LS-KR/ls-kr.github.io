@@ -1,41 +1,46 @@
 @font-face {
-    font-family: 'PingFang SC';
-    font-style: normal;
-    src: url('./fonts/PingFang-SC-Regular.woff2') format('woff2');
+  font-family: 'PingFang SC';
+  font-style: normal;
+  src: url('./fonts/PingFang-SC-Regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Senty Pea';
-    src: url('./fonts/SentyPea.woff2') format('woff2'),
+  font-family: 'Senty Pea';
+  src:
+    url('./fonts/SentyPea.woff2') format('woff2'),
     url('./fonts/SentyPea.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Senty Cream';
-    src: url('./fonts/SentyCreamPuff.woff2') format('woff2'),
+  font-family: 'Senty Cream';
+  src:
+    url('./fonts/SentyCreamPuff.woff2') format('woff2'),
     url('./fonts/SentyCreamPuff.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Senty Tang';
-    src: url('./fonts/SentyTang.woff2') format('woff2'),
+  font-family: 'Senty Tang';
+  src:
+    url('./fonts/SentyTang.woff2') format('woff2'),
     url('./fonts/SentyTang.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'LXGW Wenkai';
-    src: url('./fonts/LXGWWenKai-Regular.ttf') format('ttf'),
+  font-family: 'LXGW Wenkai';
+  src:
+    url('./fonts/LXGWWenKai-Regular.ttf') format('ttf'),
     url('./fonts/LXGWWenKai-Bold.ttf') format('ttf'),
     url('./fonts/LXGWWenKai-Light.ttf') format('ttf');
 }
 
 @font-face {
-    font-family: 'Hua';
-    src: url('./fonts/FZSJ-HUAZCMWWKQ.woff2') format('woff2'),
+  font-family: 'Hua';
+  src:
+    url('./fonts/FZSJ-HUAZCMWWKQ.woff2') format('woff2'),
     url('./fonts/FZSJ-HUAZCMWWKQ.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('./fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-family: 'JetBrains Mono';
+  src: url('./fonts/JetBrainsMono-Regular.woff2') format('woff2');
 }

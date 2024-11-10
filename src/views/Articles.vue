@@ -6,16 +6,18 @@ import { Component, Vue } from 'vue-facing-decorator'
 import docs_image from '@/data/docs-image.yaml'
 
 @Component({
-  components: { BlogCard }
+  components: { BlogCard },
 })
 export default class Articles extends Vue {
   docs_image = docs_image
   list = [] as string[]
 
   created() {
-    fetch(dataHost + 'list.json').then(it => it.text()).then(it => {
-      this.list = JSON.parse(it) as string[]
-    })
+    fetch(dataHost + 'list.json')
+      .then((it) => it.text())
+      .then((it) => {
+        this.list = JSON.parse(it) as string[]
+      })
   }
 
   getImage(name: string): string {
@@ -31,7 +33,13 @@ export default class Articles extends Vue {
 </script>
 
 <template>
-  <BlogCard v-for="(article, index) in list" :key="index" :title="article" :description="getDescription(article)" :image="getImage(article)" />
+  <BlogCard
+    v-for="(article, index) in list"
+    :key="index"
+    :title="article"
+    :description="getDescription(article)"
+    :image="getImage(article)"
+  />
 </template>
 
 <style lang="scss"></style>

@@ -16,7 +16,7 @@ export default class Projects extends Vue {
 <template>
   <div class="project-placeholder"></div>
   <div class="container">
-    <ProjectCard v-for="card in projects" :project="card" :index="card.title" :key="card.title"/>
+    <ProjectCard v-for="card in projects" :project="card" :index="card.title" :key="card.title" />
   </div>
   <div v-html="html" />
 </template>

@@ -1,1 +1,1 @@
-export const dataHost = window.location.origin  + '/docs/';
+export const dataHost = window.location.origin + '/docs/'

@@ -83,7 +83,7 @@ export default class BlogCard extends Vue {
         background-color: $flamingo;
         opacity: 0;
         transform: scaleX(0);
-        transition: all .5s $ease-out-back;
+        transition: all 0.5s $ease-out-back;
       }
 
       &:hover {
@@ -102,7 +102,7 @@ export default class BlogCard extends Vue {
   }
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   .blog-card {
     border: 1px solid hsl(355deg, 71%, 77%);
 

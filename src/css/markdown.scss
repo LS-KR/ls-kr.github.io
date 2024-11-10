@@ -1,5 +1,5 @@
-@import "./latte";
-@import "./fonts.css";
+@import './latte';
+@import './fonts.css';
 
 .markdown {
   color: $text;
@@ -7,8 +7,8 @@
   text-justify: auto;
   padding: 0.5rem 2rem;
 
-
-  h1, h2 {
+  h1,
+  h2 {
     color: $flamingo;
     font-size: 2rem;
     border-bottom: 1px solid $flamingo;
@@ -50,11 +50,12 @@
   }
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   .markdown {
     color: hsl(227deg, 68%, 88%);
 
-    h1, h2 {
+    h1,
+    h2 {
       color: hsl(0deg, 58%, 86%);
     }
 

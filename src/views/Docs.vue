@@ -4,16 +4,18 @@ import { dataHost } from '@/logic/config'
 import { Component, Prop, Vue } from 'vue-facing-decorator'
 import MDX from '@/components/MDX.vue'
 
-@Component({components: {MDX}})
+@Component({ components: { MDX } })
 export default class Docs extends Vue {
-  @Prop({required: true}) name!: string
+  @Prop({ required: true }) name!: string
 
   computedCode = ''
 
   created() {
-    fetch(dataHost + this.name + '.json').then(it => it.text()).then(it => {
-      this.computedCode = it
-    })
+    fetch(dataHost + this.name + '.json')
+      .then((it) => it.text())
+      .then((it) => {
+        this.computedCode = it
+      })
   }
 }
 </script>

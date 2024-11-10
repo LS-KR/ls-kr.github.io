@@ -5,7 +5,7 @@ import { Component, Vue } from 'vue-facing-decorator'
 import avatars from '@/data/avatar.json'
 
 @Component({
-  components: { ThemeButton }
+  components: { ThemeButton },
 })
 export default class App extends Vue {
   avatar = ''
@@ -101,7 +101,7 @@ body {
 
       &.router-link-exact-active {
         text-decoration: none;
-        color: $lavender
+        color: $lavender;
       }
     }
   }
@@ -122,13 +122,13 @@ body {
   display: block;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   body {
     background: #0e0e0e;
   }
 
   .nav {
-    background: hsl(339, 66%, 25%)
+    background: hsl(339, 66%, 25%);
   }
 }
 </style>

@@ -19,5 +19,6 @@ hr {
   height: 0;
   border-width: 1px;
   border-style: solid;
-  border-image: repeating-linear-gradient(45deg, $pink 0, $pink 20px, $maroon 20px, $maroon 40px) 0.5;
+  border-image: repeating-linear-gradient(45deg, $pink 0, $pink 20px, $maroon 20px, $maroon 40px)
+    0.5;
 }

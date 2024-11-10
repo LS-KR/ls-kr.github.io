@@ -98,7 +98,7 @@ export default class ProjectCard extends Vue {
   }
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   .project-card {
     background-color: hsl(229deg, 19%, 23%);
     box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.15);
