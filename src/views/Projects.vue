@@ -35,5 +35,7 @@ export default class Projects extends Vue {
   align-items: start;
   gap: 1rem;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
 }
 </style>

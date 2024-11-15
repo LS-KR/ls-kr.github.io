@@ -1,11 +1,11 @@
 <script lang="ts">
 import ThemeButton from '@/components/ThemeButton.vue'
-import { randint } from '@/logic/helper'
-import { Component, Vue } from 'vue-facing-decorator'
 import avatars from '@/data/avatar.json'
 import contacts from '@/data/contacts.json'
-import { Contact } from './logic/data'
+import { randint } from '@/logic/helper'
 import { Icon } from '@iconify/vue'
+import { Component, Vue } from 'vue-facing-decorator'
+import { Contact } from './logic/data'
 
 @Component({
   components: { ThemeButton, Icon },
@@ -158,6 +158,34 @@ body {
 
   .nav {
     background: hsl(339, 66%, 25%);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 5px;
+
+    .nav-left, .nav-right {
+      align-items: center;
+      width: 100%;
+    }
+
+    .nav-left {
+      margin-left: 20px;
+    }
+    .nav-right {
+      justify-content: end;
+      margin-right: 20px;
+    }
+  }
+
+  .placeholder {
+    height: 120px;
   }
 }
 </style>
